@@ -7,8 +7,8 @@
 
 require 'pry'
 
-def say(question)
-  puts "--- #{question} ---"
+def say(s)
+  puts "--- #{s} ---"
 end
 
 def get_number(question)
@@ -59,5 +59,3 @@ num2 = get_number("Enter the second number:")
 operation = get_operation
 
 give_answer(num1, num2, operation)
-
-
