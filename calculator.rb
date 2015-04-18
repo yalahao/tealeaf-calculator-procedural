@@ -37,17 +37,19 @@ end
 
 
 def give_answer(num1, num2, operation)
+  num1_f = num1.to_f
+  num2_f = num2.to_f
   if operation.to_i == 1
-    answer = num1.to_i + num2.to_i
+    answer = num1_f + num2_f
     say "#{num1} adds #{num2} equals #{answer}"
   elsif operation.to_i == 2
-    answer = num1.to_i - num2.to_i
+    answer = num1_f - num2_f
     say "Substracting #{num2} from #{num1} gives you #{answer}"
   elsif operation.to_i == 3
-    answer = num1.to_i * num2.to_i
+    answer = num1_f * num2_f
     say "#{num1} multiplied by #{num2} equals #{answer}"
   elsif operation.to_i == 4
-    answer = num1.to_f / num2.to_f
+    answer = num1_f / num2_f
     say "#{num1} divided by #{num2} equals #{answer}"
   end
 end
