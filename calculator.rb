@@ -51,6 +51,8 @@ def give_answer(num1, num2, operation)
   elsif operation.to_i == 4
     answer = num1_f / num2_f
     say "#{num1} divided by #{num2} equals #{answer}"
+  else
+    say "Something went wrong when you select the operation. Run the program again and make sure you select an valid option."
   end
 end
     
